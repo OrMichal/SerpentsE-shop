@@ -1,0 +1,34 @@
+:root{
+    background-color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.MainHeading{
+    font-size: 7rem;
+}
+
+.headIcon{
+    width: 5rem;
+    height: 5rem;
+}
+
+.mot{
+    margin-left: 70%;
+    margin-top: -0.5rem;
+}
+
+.welcomeDiv{
+    padding: 1rem;
+}

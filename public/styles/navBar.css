@@ -1,0 +1,19 @@
+.navBar{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.navItem{
+    color: black;
+    font-size: 1.5rem;
+
+    transition: 200ms ease;
+}
+
+.navItem:hover{
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+    transform:translateY(0.3rem);
+}
