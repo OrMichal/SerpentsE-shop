@@ -1,34 +1,78 @@
-:root{
+:root {
     background-color: white;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+    color: #222;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.mainDiv{
+.mainDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 2rem;
 }
 
-.MainHeading{
+.MainHeading {
     font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
 }
 
-.headIcon{
+.headIcon {
     width: 5rem;
     height: 5rem;
 }
 
-.mot{
-    margin-left: 70%;
+.mot {
+    margin-left: auto;
+    margin-right: 2rem;
     margin-top: -0.5rem;
+    font-style: italic;
+    font-size: 1.2rem;
 }
 
-.welcomeDiv{
-    padding: 1rem;
+.infoDiv {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.infText {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .MainHeading {
+        font-size: 5rem;
+    }
+
+    .headIcon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .mot {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .welcomeDiv {
+        padding: 1.5rem;
+    }
+
+    .welText {
+        font-size: 1.2rem;
+    }
 }

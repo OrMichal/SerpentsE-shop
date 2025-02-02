@@ -1,0 +1,28 @@
+.footer {
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.footer .text {
+    font-size: 1rem;
+    opacity: 0.8;
+    transition: opacity 200ms ease-in-out;
+}
+
+.footer .text:hover {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
