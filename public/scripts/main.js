@@ -5,8 +5,8 @@ window.onload = async () => {
     });
 
     const res = await data.json();
-    console.log(res);
     const prodGrid = document.getElementById("prodGrid");
+    
     res.forEach(item => {
         const prodDiv = document.createElement("div");
         prodDiv.className = "productDiv";
