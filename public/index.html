@@ -24,8 +24,14 @@
             <span class="navItem"><a href="./webs/Novinky.html">Novinky</a></span>
             <span class="navItem"><a id="active">Domů</a></span>
             <span class="navItem"><a href="./webs/Onas.html">O nás</a></span>
+            
+            <span class="navItem" id="cartNavItem">
+                <svg id="cartIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M7 4V2h10v2h-3l-1 6h-6l-1-6H7zm0 2h10l.7 4H6.3L7 6zm1 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm9 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-9 2c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm9 0c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z"/>
+                </svg>
+                <span id="cartItemCount" class="cartItemCount">0</span>
+            </span>
         </nav>
-
         
 
         <div class="productsGrid" id="prodGrid">
@@ -33,6 +39,57 @@
         </div>
         
     </div>
+
+    <div id="orderDialog" class="orderDialog">
+        <div class="dialogContent">
+            <h2>Objednání produktu</h2>
+            <div id="dialogProductDetails">
+
+            </div>
+            <label for="quantity">Množství:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" />
+
+            <label for="productDescription">Popis:</label>
+            <textarea id="productDescription" rows="4" placeholder="Přidejte poznámky k produktu"></textarea>
+
+            <button id="cartAddButton">Přidat do košíku</button>
+            <button id="closeDialog">Zavřít</button>
+        </div>
+    </div>
+
+    <div id="cartAddedNotification" class="notification">
+        Produkt byl přidán do košíku!
+    </div>
+
+    <div id="cartDialog" class="cartDialog">
+        <div class="cartDialogContent">
+            <h2>Košík</h2>
+            <div id="cartItemsList">
+
+            </div>
+            <div id="cartTotal">
+
+            </div>
+
+            <div class="customerInfo">
+                <label for="fullName">Jméno a příjmení:</label>
+                <input type="text" id="fullName" placeholder="Jméno a příjmení" required>
+
+                <label for="address">Adresa:</label>
+                <input type="text" id="address" placeholder="Adresa" required>
+
+                <label for="phone">Telefonní číslo:</label>
+                <input type="tel" id="phone" placeholder="Telefonní číslo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="E-mail" required>
+            </div>
+
+            <button id="orderButton">Objednat</button>
+            <button id="closeCartDialog">Zavřít</button>
+        </div>
+    </div>
+
 
     <footer class="footer">
         <span class="text">© 2025 Serpents</span>
